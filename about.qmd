@@ -25,7 +25,6 @@ matplotlib) · SQL · Excel · Quarto · Git
 ## Elsewhere
 
 - [GitHub](https://github.com/tlabagala)
-- [LinkedIn](https://www.linkedin.com/in/yourusername)
-- [Download CV](assets/cv.pdf)
+- [LinkedIn](https://www.linkedin.com/in/tristan-labagala/)
 
 <!-- Drop a cv.pdf into assets/ to enable the CV link, or remove that line. -->
