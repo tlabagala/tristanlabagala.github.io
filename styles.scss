@@ -1,0 +1,87 @@
+/*-- scss:defaults --*/
+
+// Fonts. Fraunces (serif) for display, Inter for body, JetBrains Mono for code.
+// Deliberately not the stock Bootswatch stack - the serif/sans pairing is what
+// makes the site read as a considered choice rather than a template default.
+$font-family-sans-serif: "Inter", system-ui, -apple-system, sans-serif;
+$headings-font-family:   "Fraunces", Georgia, "Times New Roman", serif;
+$font-family-monospace:  "JetBrains Mono", ui-monospace, monospace;
+
+// Colour. Warm off-white page, near-black ink, one blue accent. Blue rather than
+// the terracotta/clay that AI portfolios default to.
+$body-bg:      #fdfdfc;
+$body-color:   #24211f;
+$link-color:   #185fa5;
+$link-hover-color: #0c447c;
+
+$headings-font-weight: 600;
+
+/*-- scss:rules --*/
+
+// Narrow the reading measure so prose does not sprawl on wide monitors. This is
+// the single change that most makes long-form analysis pages feel finished.
+main.content {
+  max-width: 34rem;
+}
+
+// Break a figure out past the text column. Apply with a fenced div:
+// ::: {.column-page}
+.column-page .figure-wide,
+.figure-wide {
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+// Title block. Kicker-style category, serif title, muted description.
+.quarto-title .quarto-categories {
+  gap: 0.4rem;
+}
+.quarto-title .quarto-category {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 0.5px solid #d3d1c7;
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  color: #5f5e5a;
+}
+.quarto-title .description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #5f5e5a;
+}
+
+// Listing cards on the landing page.
+.quarto-grid-item {
+  border: 0.5px solid #e6e4dd;
+  border-radius: 12px;
+  transition: border-color 0.15s ease;
+}
+.quarto-grid-item:hover {
+  border-color: #b4b2a9;
+}
+.quarto-grid-item .card-img-top {
+  border-radius: 12px 12px 0 0;
+}
+.listing-category {
+  font-size: 0.72rem !important;
+  letter-spacing: 0.02em;
+}
+
+// Figure captions: quieter, left-aligned, so the finding reads as an aside.
+figcaption, .figure-caption {
+  font-size: 0.82rem;
+  color: #5f5e5a;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+// Blockquote as a pull-quote for the one methodological line worth surfacing.
+blockquote {
+  border-left: 2px solid #185fa5;
+  border-radius: 0;
+  padding-left: 1rem;
+  font-family: "Fraunces", Georgia, serif;
+  font-style: normal;
+  color: #24211f;
+}

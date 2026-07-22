@@ -1,0 +1,31 @@
+---
+title: "About"
+---
+
+I am a Business Analytics and Business Information Systems student at Monash,
+working in data analytics with a focus on turning messy operational data into
+decisions. My work sits across three languages: R for statistics and
+econometrics, Python for machine learning pipelines, and SQL for the data
+underneath both.
+
+<!-- Replace the placeholder text above and the details below with your own. -->
+
+## What I work on
+
+- Panel and mixed-effects econometrics applied to social-science questions
+- Machine learning with careful validation design to prevent leakage
+- Reconciliation and variance analysis on financial and operational data
+- API-driven data collection where the data does not arrive as a tidy CSV
+
+## Tools
+
+R (tidyverse, ggplot2, fixest, lme4, mgcv) · Python (scikit-learn, LightGBM,
+matplotlib) · SQL · Excel · Quarto · Git
+
+## Elsewhere
+
+- [GitHub](https://github.com/tlabagala)
+- [LinkedIn](https://www.linkedin.com/in/yourusername)
+- [Download CV](assets/cv.pdf)
+
+<!-- Drop a cv.pdf into assets/ to enable the CV link, or remove that line. -->

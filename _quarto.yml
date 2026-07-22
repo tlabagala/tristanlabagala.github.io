@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "projects/*.qmd"
+
+execute:
+  freeze: auto        # cache executed output; only re-run when source changes
+
+website:
+  title: "Tristan Labagala"
+  description: "Data analytics and research projects in R, Python, and SQL."
+  site-url: "https://tlabagala.github.io"
+  navbar:
+    pinned: true
+    right:
+      - text: "Work"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+      - icon: github
+        href: https://github.com/tlabagala
+        aria-label: GitHub
+  page-footer:
+    left: "Built with Quarto"
+    right: "&copy; 2026 Tristan Labagala"
+
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    toc: true
+    toc-location: right
+    code-fold: true          # long chunks collapse by default
+    code-tools: true
+    code-link: true
+    anchor-sections: true
+    fig-align: left
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">

@@ -1,0 +1,23 @@
+---
+title: "Tristan Labagala"
+subtitle: "Data analytics and research, in R, Python, and SQL."
+listing:
+  id: work
+  contents: projects
+  type: grid
+  sort: "date desc"
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [image, title, description, categories, date]
+page-layout: full
+title-block-banner: false
+---
+
+Analytics and research projects spanning econometrics, machine learning, and
+data engineering. Each write-up covers the question, the data, the method and
+why it was chosen, the findings, and - always - the assumptions it rests on.
+Every page links to its full code on GitHub.
+
+::: {#work}
+:::

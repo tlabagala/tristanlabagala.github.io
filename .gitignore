@@ -1,0 +1,25 @@
+# Quarto build output and cache
+/_site/
+/.quarto/
+
+# IMPORTANT: do NOT ignore _freeze/. It holds cached executed output and must be
+# committed - it is what lets CI build without R or Python installed.
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+**/*.quarto_ipynb

@@ -1,0 +1,66 @@
+---
+title: "A question in plain English?"
+description: "One line: the method, the data, the scope."
+date: 2026-01-01
+categories: [R, tool-two, topic]
+image: "../assets/figures/your-thumbnail.png"
+image-alt: "Short description of the thumbnail figure."
+---
+
+<!--
+COPY THIS FILE to projects/<slug>.qmd for each new project. Do not edit this
+template in place - the leading underscore keeps it off the site.
+
+Rules:
+- Title is a plain-English question, not a method name.
+- categories become the filter pills and per-card badges: use real tool names.
+- Keep the body roughly 600-900 words.
+- Follow the section order below. The "Assumptions and limitations" section is
+  required, not optional.
+- Captions state the finding, not the chart type.
+- Use hyphens, never em dashes.
+- One language per page (knitr for R, jupyter for Python). Do not mix.
+-->
+
+## The question
+
+One or two sentences, non-technical. State what you were trying to find out and
+why it matters. A reviewer should understand the point before hitting any code.
+
+## Data and cleaning
+
+Source, size, granularity, and time span. Then the messy parts you resolved -
+composite keys, mixed formats, joins that needed safeguarding. The cleaning is
+often more impressive than the model, so do not skip it.
+
+[View the code and data on GitHub](https://github.com/yourusername/your-repo)
+
+## Method, and why this one
+
+Name the method, then justify the choice against the obvious alternative. Not
+just "I used fixed effects" but why fixed effects rather than pooled OLS.
+
+> A one-line pull-quote carrying the key methodological insight goes here. This
+> is the sentence you most want a reviewer to actually read.
+
+## Findings
+
+Display one or two figures. Preferred pattern is a pre-exported PNG:
+
+::: {.column-page}
+![Fig 1. Caption states the finding, not the chart type.](../assets/figures/your-figure.png){.figure-wide}
+:::
+
+State the headline numbers in the prose around the figure.
+
+## Assumptions and limitations
+
+Required section. List the assumptions the method rests on (for example:
+independence, normality, no time-varying confounders, patient-level splitting to
+prevent leakage) and say which you checked and which you could not. Then state
+what the result does not license you to claim.
+
+## Reproducing this
+
+Brief note on how someone would run it: the repo, the lockfile, and whether the
+data is public.

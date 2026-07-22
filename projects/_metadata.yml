@@ -1,0 +1,12 @@
+# Settings applied to every page in projects/.
+# Keeps individual project YAML headers short and consistent.
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: true
+    code-tools: true
+
+# Back-link to the listing appears via the navbar; keep pages focused on content.
+title-block-banner: false
