@@ -2,27 +2,23 @@
 title: "About"
 ---
 
-I am a curious and eager final year Bachelor of Commerce/Bachelor of Information Systems
-student majoring in Business Analytics and Business Information Systems at Monash University.
-I am passionate about utilising data to uncover insights and solve real problems. 
+![](assets/headshot.jpg){.headshot fig-alt="Tristan Labagala"}
+
+Hi there! My name is Tristan Labagala and I am final year Bachelor of Commerce (Business Analytics)/Bachelor of Information Systems (Business Information Technology) student at Monash University. I am passionate about utilising data to uncover insights and solve real problems.
 
 <!-- Replace the placeholder text above and the details below with your own. -->
 
 ## What I work on
 
-- Panel and mixed-effects econometrics applied to social-science questions
-- Machine learning with careful validation design to prevent leakage
-- Reconciliation and variance analysis on financial and operational data
-- API-driven data collection where the data does not arrive as a tidy CSV
+
 
 ## Tools
 
 R (tidyverse, ggplot2, fixest, lme4, mgcv) · Python (scikit-learn, LightGBM,
-matplotlib) · SQL · Excel · Quarto · Git
+matplotlib) · SQL · Excel · Quarto · Git · VS Code 
 
 ## Elsewhere
 
 - [GitHub](https://github.com/tlabagala)
 - [LinkedIn](https://www.linkedin.com/in/tristan-labagala/)
-
 <!-- Drop a cv.pdf into assets/ to enable the CV link, or remove that line. -->

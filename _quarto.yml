@@ -14,6 +14,8 @@ website:
   site-url: "https://tlabagala.github.io"
   navbar:
     pinned: true
+    background: primary   # picks up $primary from styles.scss
+    foreground: light
     right:
       - text: "Work"
         href: index.qmd

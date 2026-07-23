@@ -11,7 +11,8 @@ listing:
   filter-ui: false
   fields: [image, title, description, categories, date]
 page-layout: full
-title-block-banner: false
+title-block-banner: "#185fa5" 
+title-block-banner-color: white
 ---
 
 Analytics and research projects spanning econometrics, machine learning, and

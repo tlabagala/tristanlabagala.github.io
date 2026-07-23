@@ -1,10 +1,10 @@
 /*-- scss:defaults --*/
 
-// Fonts. Inter for both headings and body, JetBrains Mono for code. Headings
-// carry weight and size rather than a contrasting face. Fraunces is still
-// loaded for the pull-quote in scss:rules below, and nothing else.
+// Fonts. Fraunces (serif) for display, Inter for body, JetBrains Mono for code.
+// Deliberately not the stock Bootswatch stack - the serif/sans pairing is what
+// makes the site read as a considered choice rather than a template default.
 $font-family-sans-serif: "Inter", system-ui, -apple-system, sans-serif;
-$headings-font-family:   "Inter", system-ui, -apple-system, sans-serif;
+$headings-font-family:   "Inter", Georgia, "Times New Roman", serif;
 $font-family-monospace:  "JetBrains Mono", ui-monospace, monospace;
 
 // Colour. Warm off-white page, near-black ink, one blue accent. Blue rather than
@@ -15,6 +15,7 @@ $link-color:   #185fa5;
 $link-hover-color: #0c447c;
 
 $headings-font-weight: 600;
+$primary: #185fa5;
 
 /*-- scss:rules --*/
 
@@ -81,7 +82,34 @@ blockquote {
   border-left: 2px solid #185fa5;
   border-radius: 0;
   padding-left: 1rem;
-  font-family: "Fraunces", Georgia, serif;
+  font-family: "Inter", Georgia, serif;
   font-style: normal;
   color: #24211f;
+}
+
+// Headshot on the About page. Circular and cropped square regardless of the
+// source aspect ratio, so an off-square photo still sits correctly.
+img.headshot,
+.headshot img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #e6e4dd;
+}
+
+// Beside the intro on wider screens, stacked and centred on phones.
+@media (min-width: 700px) {
+  img.headshot,
+  .headshot img {
+    float: right;
+    margin: 0.2rem 0 1rem 1.5rem;
+  }
+}
+@media (max-width: 699.98px) {
+  img.headshot,
+  .headshot img {
+    display: block;
+    margin: 0 auto 1.5rem;
+  }
 }

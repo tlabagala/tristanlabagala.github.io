@@ -38,9 +38,28 @@ theme_portfolio <- function(base_size = 12) {
 # Palette. Use portfolio_accent for the one series that matters and
 # portfolio_grey for everything non-focal. Highlighting against grey reads as
 # far more considered than a rainbow scale across many categories.
-portfolio_accent <- "#185fa5"  # matches the site link colour in styles.scss
+#
+# These MUST stay in step with the palette in styles.scss. ggplot2 knows nothing
+# about the site CSS, so the values are necessarily duplicated. If you change
+# $accent there, change portfolio_accent here.
+portfolio_accent <- "#185fa5"  # $accent
+portfolio_warm   <- "#b5622f"  # $accent-warm
+portfolio_green  <- "#2f7d5f"  # $accent-green
 portfolio_grey   <- "grey75"
-portfolio_ink    <- "#24211f"
+portfolio_ink    <- "#24211f"  # $ink
+
+# Ordered categorical palette, for the cases where a chart genuinely has several
+# comparable series and no single one to highlight. Four is the ceiling: past
+# that, facet the chart instead of adding colours.
+portfolio_palette <- c(portfolio_accent, portfolio_warm,
+                       portfolio_green, portfolio_grey)
+
+scale_colour_portfolio <- function(...) {
+  scale_colour_manual(values = portfolio_palette, ...)
+}
+scale_fill_portfolio <- function(...) {
+  scale_fill_manual(values = portfolio_palette, ...)
+}
 
 # Convenience scale: TRUE gets the accent, FALSE gets grey. Handy for
 # highlighting a single group.
