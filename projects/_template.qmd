@@ -33,7 +33,7 @@ Source, size, granularity, and time span. Then the messy parts you resolved -
 composite keys, mixed formats, joins that needed safeguarding. The cleaning is
 often more impressive than the model, so do not skip it.
 
-[View the code and data on GitHub](https://github.com/yourusername/your-repo)
+[View the code and data on GitHub](https://github.com/tlabagala/your-repo)
 
 ## Method, and why this one
 

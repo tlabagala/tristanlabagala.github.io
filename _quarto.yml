@@ -33,7 +33,9 @@ format:
     toc-location: right
     code-fold: true          # long chunks collapse by default
     code-tools: true
-    code-link: true
+    # code-link needs the downlit package at render time. CI installs only
+    # Quarto - no R - so it can never apply there. Off, to match reality.
+    code-link: false
     anchor-sections: true
     fig-align: left
     include-in-header:
