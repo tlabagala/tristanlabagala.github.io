@@ -2,11 +2,9 @@
 title: "About"
 ---
 
-I am a Business Analytics and Business Information Systems student at Monash,
-working in data analytics with a focus on turning messy operational data into
-decisions. My work sits across three languages: R for statistics and
-econometrics, Python for machine learning pipelines, and SQL for the data
-underneath both.
+I am a curious and eager final year Bachelor of Commerce/Bachelor of Information Systems
+student majoring in Business Analytics and Business Information Systems at Monash University.
+I am passionate about utilising data to uncover insights and solve real problems. 
 
 <!-- Replace the placeholder text above and the details below with your own. -->
 
